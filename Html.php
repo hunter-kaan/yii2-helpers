@@ -21,7 +21,7 @@ class Html extends \yii\helpers\Html
 	{
 		static::addCssClass($options, [
 			'glyphicon',
-			sprintf('glyphicon-s', $icon),
+			sprintf('glyphicon-%s', $icon),
 		]);
 		return static::tag('span', '', $options);
 	}
